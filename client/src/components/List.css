@@ -1,0 +1,10 @@
+.list {
+    list-style-type:none;
+    padding: 0;
+}
+
+.item {
+    font-size: larger;
+    color: beige;
+    /* margin-top: 5rem; */
+}
