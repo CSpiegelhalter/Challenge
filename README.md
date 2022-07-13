@@ -1,6 +1,6 @@
-��#� �C�h�a�l�l�e�n�g�e�
-�
-�
+Clone repo
+
+npm i
 
 npm start
 
