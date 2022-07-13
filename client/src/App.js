@@ -15,10 +15,10 @@ function App() {
         .then((data) => {
           setData(data)
           setHoldData(data)
-         console.log(data)
-         setLoaded(true)
+          console.log(data)
+          setLoaded(true)
         });
-    }    
+    }
   }, []);
 
   function aFilter() {
@@ -33,10 +33,9 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <List props={data} />
         <button className="button-6" onClick={aFilter}>Give me the A's!</button>
         <button className="button-6" onClick={reset}>Reset</button>
-        {/* <img src={logo} className="App-logo" alt="logo" /> */}
-        <List props={data}/>
       </header>
     </div>
   );

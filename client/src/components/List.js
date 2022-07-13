@@ -7,7 +7,7 @@ function List({props}) {
         <ul className="list">
             {props.map((item, i) =>
             <li>
-                <a className="item" key={item.name} href={`https://finance.yahoo.com/quote/${item.symbol}`}>{item.name}</a>
+                <a target="_blank" className="item" key={item.name} href={`https://finance.yahoo.com/quote/${item.symbol}`}>{item.name}</a>
             </li>
             )}
         </ul>

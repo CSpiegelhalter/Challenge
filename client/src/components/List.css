@@ -1,9 +1,21 @@
 .list {
     list-style-type:none;
+    background-color: aliceblue;
     padding: 0;
+    height: fit-content;
 }
-
+a {
+    text-decoration: none;
+}
+a:hover {
+    color: darkgray;
+}
+li {
+    margin: 1rem;
+}
 .item {
+    font-weight: 600;
     font-size: larger;
-    color: beige;
+    color: black;
+    margin-top: 3rem;
 }
