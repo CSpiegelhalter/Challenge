@@ -2,7 +2,8 @@
     list-style-type:none;
     background-color: aliceblue;
     padding: 0;
-    height: fit-content;
+    height: 20rem;
+    width: 50rem;
 }
 a {
     text-decoration: none;

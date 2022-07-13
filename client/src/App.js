@@ -21,8 +21,8 @@ function App() {
     }
   }, []);
 
-  function aFilter() {
-    setData(data.filter(word => word.symbol[0] === 'A'))
+  function aFilter(letter) {
+    setData(holdData.filter(word => word.symbol[0] === letter))
   }
 
   function reset() {
@@ -34,7 +34,12 @@ function App() {
     <div className="App">
       <header className="App-header">
         <List props={data} />
-        <button className="button-6" onClick={aFilter}>Give me the A's!</button>
+        <div className="container">
+          <button className="button-6" onClick={() => aFilter('A')}>Give me the A's!</button>
+          <button className="button-6" onClick={() => aFilter('I')}>Give me the I's!</button>
+          <button className="button-6" onClick={() => aFilter('P')}>Give me the P's!</button>
+          <button className="button-6" onClick={() => aFilter('T')}>Give me the T's!</button>
+        </div>
         <button className="button-6" onClick={reset}>Reset</button>
       </header>
     </div>
