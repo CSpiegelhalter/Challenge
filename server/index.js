@@ -4,6 +4,8 @@ const PORT = process.env.PORT || 3001;
 
 const app = express();
 
+app.use(express.static(path.resolve(__dirname, '../client/build')));
+
 app.get("/stocks", (req, res) => {
     const stockArray = [
 
@@ -29,6 +31,10 @@ app.get("/stocks", (req, res) => {
     // Sorts in alpha order
     returnData.sort((a, b) => a.name.localeCompare(b.name))
     res.json(returnData);
+  });
+
+  app.get('*', (req, res) => {
+    res.sendFile(path.resolve(__dirname, '../client/build', 'index.html'));
   });
 
 app.listen(PORT, () => {
